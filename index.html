@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HNG Project Profile" >
+    <link rel="icon" href="OIP (19).jpeg" type="image/jpeg">
+    <title>HNG PROJECT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <mainclass="container">
+        <article class="cover" data-testid="test-profile-card">
+
+            <div class="left">
+                <img src="OIP (19).jpeg" alt="williams akinwamide" data-testid="slackDisplayImage">
+                
+                <header class="text">
+                    <div class="name" data-testid="slackUserName">
+                        <h1>Williams Akinwamide</h1>
+                    </div>
+                    
+                    <div data-testid="myTrack">
+                        <h3>My track is Frontend</h3>
+                        <p data-testid="myTracktext" class="">
+                            Frontend developer passionate about creating accessible and responsive web applications. 
+                            Love turning complex problems into simple, beautiful solutions.
+                        </p>
+                    </div>
+                </header>
+
+            </div>
+
+            <div class="right">
+                <div class="names" data-testid="slackUserName">
+                    <h1>Williams Akinwamide.</h1>
+                </div>
+                <div class="date_and_time">
+
+                    <div class="time" id="times" data-testid="currentUTCTime" ></div>
+                    <div class="date" id="dates" data-testid="currentDayOfTheWeek"></div>
+
+                </div>
+                
+                    <!-- <a href="" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github" style="color: white;"></i>go to github
+                    </a> -->
+                <nav data-testid="githtbURL" class="git">
+                    <ul data-testid="social-links" class="social-links">
+                        <li>
+                            <a href="#" 
+                               data-testid="social-twitter"
+                               target="_blank" 
+                               rel="noopener noreferrer">
+                                Twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/willy264/hng_stage0"
+                               data-testid="social-github"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                GitHub
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <section class="charSection">
+                    <div class="hobbies_container">
+                        <h3>Hobbies</h3>
+                        <ul data-testid="hobbies" class="hobbiesList">
+                            <li>Coding</li>
+                            <li>Reading Manga</li>
+                            <li>Learning</li>
+                            <li>Taekwondo</li>
+                        </ul>
+                    </div>
+
+                    <div class="dislikes_container">
+                        <h3>Dislikes</h3>
+                        <ul data-testid="dislikes" class="dislikesList">
+                            <li>Heat</li>
+                            <li>Traffic</li>
+                            <li>Bad UX</li>
+                            <li>Walking Fast</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </article>
+    </main>
+    <script src="script.js"></script>
+    
+
+</body>
+</html>
