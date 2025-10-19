@@ -13,15 +13,15 @@ const generateCurrentDate = () => {
     "Saturday",
   ];
   const dayIndex = date.getDay();
-  const currentDay = daysOfTheWeek[dayIndex];
+  const currentDay = daysOfTheWeek[dayIndex]; 
   currentDayText.innerText = currentDay;
 };
 
 const generateUTCTime = () => {
-  const date = new Date();
+  // const date = new Date();
   const utcTimeMilliseconds = date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
   currentUTCTime.textContent = utcTimeMilliseconds;
-};
+}; 
 
 generateCurrentDate();
 generateUTCTime();
