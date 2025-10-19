@@ -8,7 +8,7 @@ A responsive and accessible profile card component built with semantic HTML, CSS
 - Responsive design (mobile, tablet, desktop)
 - Accessible to keyboard users and screen readers
 - Real-time milliseconds counter
-- Optional image upload functionality
+- Image upload functionality
 - Social links with proper security attributes
 - Properly structured lists for hobbies and dislikes
 
@@ -16,14 +16,13 @@ A responsive and accessible profile card component built with semantic HTML, CSS
 
 ### HTML
 
-- Uses semantic tags (`<article>`, `<figure>`, `<nav>`, `<section>`, etc.)
+- Uses semantic tags (`<article>`, `<nav>`, `<section>`, etc.)
 - All interactive elements are keyboard-focusable
-- Proper ARIA attributes and roles where needed
 - All elements include required data-testid attributes
 
 ### CSS
 
-- Modern CSS with Flexbox and Grid
+- Modern CSS with Flexbox 
 - Responsive design with mobile-first approach
 - Accessible focus styles
 - Smooth transitions and animations
