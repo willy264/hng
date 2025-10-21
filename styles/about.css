@@ -13,42 +13,42 @@
     padding: 1.5rem;
     margin-bottom: 2rem;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
 
-.about-section h2 {
-    color: white;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    padding-bottom: 0.5rem;
+    h2 {
+        color: white;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding-bottom: 0.5rem;
+    }
 }
 
 .content-box {
     color: rgba(255, 255, 255, 0.9);
     line-height: 1.6;
-}
 
-.content-box ul {
-    list-style-type: none;
-    padding: 0;
-}
+    ul {
+        list-style-type: none;
+        padding: 0;
 
-.content-box ul li {
-    margin-bottom: 0.5rem;
-    padding-left: 1.5rem;
-    position: relative;
-}
+        li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
 
-.content-box ul li:before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: rgba(255, 255, 255, 0.6);
-}
+            &:before {
+                content: "•";
+                position: absolute;
+                left: 0;
+                color: rgba(255, 255, 255, 0.6);
+            }
+        }
+    }
 
-.content-box p {
-    margin: 0;
-    text-align: justify;
+    p {
+        margin: 0;
+        text-align: justify;
+    }
 }
 
 @media (max-width: 768px) {
@@ -60,10 +60,10 @@
     .about-section {
         padding: 1rem;
         margin-bottom: 1rem;
-    }
 
-    .about-section h2 {
-        font-size: 1.2rem;
+        h2 {
+            font-size: 1.2rem;
+        }
     }
 
     .content-box {

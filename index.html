@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="HNG Project Profile" >
-    <link rel="icon" href="OIP (19).jpeg" type="image/jpeg"> 
+    <link rel="icon" href="/images/OIP (19).jpeg" type="image/jpeg"> 
     <title>HNG PROJECT</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <mainclass="container">
+    <main class="container">
         <article class="cover" data-testid="test-profile-card">
 
             <div class="left">
-                <img src="OIP (19).jpeg" alt="williams akinwamide" data-testid="test-user-avatar">
-                
+                <img src="/images/OIP (19).jpeg" alt="williams akinwamide" data-testid="test-user-avatar">
+
                 <header class="text">
                     <div class="name" data-testid="test-user-name">
                         <h1>Williams Akinwamide</h1>
@@ -22,10 +23,15 @@
                     
                     <div class="bio-container">
                         <h3>My track is Frontend</h3>
-                        <p data-testid="test-user-bio" class="">
+                        <p data-testid="test-user-bio">
                             Frontend developer passionate about creating accessible and responsive web applications. 
                             Love turning complex problems into simple, beautiful solutions.
                         </p>
+                        <div class="button-container">
+                            <a href="/pages/about.html" class="nav-button">About Me</a>
+                            <a href="/pages/contact.html" class="nav-button">Contact Me</a>                           
+                        </div>
+
                     </div>
                 </header>
 
@@ -36,33 +42,10 @@
                     <h1>Williams Akinwamide.</h1>
                 </div>
                 <div class="date_and_time">
-
                     <div class="time" id="times" data-testid="test-user-time"></div>
                     <div class="date" id="dates" data-testid="current-day"></div>
-
                 </div>
-                
-                <nav class="git">
-                    <ul data-testid="test-user-social-links" class="social-links">
-                        <li>
-                            <a href="https://x.com/william_da3447" 
-                               data-testid="test-user-social-twitter"
-                               target="_blank" 
-                               rel="noopener noreferrer">
-                                Twitter
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/willy264/hng_stage0"
-                               data-testid="test-user-social-github"
-                               target="_blank"
-                               rel="noopener noreferrer">
-                                GitHub
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                
+
                 <section class="charSection">
                     <div class="hobbies_container">
                         <h3>Hobbies</h3>
@@ -84,10 +67,33 @@
                         </ul>
                     </div>
                 </section>
+                
+                <nav class="git">
+                    <ul data-testid="test-user-social-links" class="social-links">
+                        <li>
+                            <a href="https://x.com/william_da3447" 
+                               data-testid="test-user-social-twitter"
+                               target="_blank" 
+                               rel="noopener noreferrer">
+                                <i class="fab fa-x-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/willy264/hng_stage0"
+                               data-testid="test-user-social-github"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </article>
     </main>
-    <script src="script.js"></script>
+    <script src="/scripts/script.js"></script>
     
 
 </body>
