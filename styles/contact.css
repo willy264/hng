@@ -25,11 +25,19 @@
     border-radius: 0.5rem;
     background: rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
+    border-left: 3px solid rgb(255, 107, 107);
+
+    & label::after {
+        content: "*";
+        color: rgb(255, 107, 107);
+        margin-left: 4px;
+    }
 
     &:focus-within {
         border-color: rgba(255, 255, 255, 0.5);
         background: rgba(255, 255, 255, 0.15);
         box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+        
 
         label {
             transform: translateY(-1.4rem) scale(0.85);
@@ -53,11 +61,16 @@
         z-index: 1;
     }
 
-    &.has-value label {
-        transform: translateY(-1.4rem) scale(0.85);
-        background: rgba(30, 60, 114, 0.95);
-        padding: 0 0.5rem;
-        color: white;
+    &.has-value {
+        border-left: 3px solid rgb(81, 207, 102);
+
+        label {
+            transform: translateY(-1.4rem) scale(0.85);
+            background: rgba(30, 60, 114, 0.95);
+            border-radius: 0.5rem;
+            padding: 0 0.5rem;
+            color: white;
+        }
     }
 }
 
@@ -103,16 +116,16 @@ button[type="submit"] {
 }
 
 .error-message {
-    color: #ff6b6b;
-    font-size: 0.875rem;
-    margin-top: 0.5rem;
+    color: rgb(255, 107, 107);
+    font-size: 10px;
+    margin-left: 0.8rem;
     display: block;
 }
 
 .success-message {
     display: none;
     text-align: center;
-    color: #51cf66;
+    color: rgb(81, 207, 102);
     padding: 1rem;
     border-radius: 0.5rem;
     background: rgba(81, 207, 102, 0.1);
